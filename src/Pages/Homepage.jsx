@@ -1,6 +1,4 @@
 import React from "react";
-import Homepage from "./pages/Homepage.jsx";
-
 
 export default function Homepage() {
   return (
@@ -9,7 +7,7 @@ export default function Homepage() {
         {/* Imagem pequena por cima */}
         <div className="flex justify-center mb-6">
           <img
-            src="src/assets/af.png" // coloca aqui o caminho da tua imagem (ex: public/logo.png)
+            src="/af.png" // imagem dentro da pasta "public"
             alt="Logo"
             className="w-16 h-16 object-contain"
           />
