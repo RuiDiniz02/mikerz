@@ -1,9 +1,20 @@
 import React from "react";
+import Homepage from "./pages/Homepage.jsx";
+
 
 export default function Homepage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950 text-zinc-100 flex items-center justify-center p-6">
       <section className="w-full max-w-2xl text-center">
+        {/* Imagem pequena por cima */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="src/assets/af.png" // coloca aqui o caminho da tua imagem (ex: public/logo.png)
+            alt="Logo"
+            className="w-16 h-16 object-contain"
+          />
+        </div>
+
         {/* Faixa de aviso */}
         <div className="relative mb-8">
           <div className="absolute inset-0 -skew-x-6 bg-yellow-400/20 rounded-2xl blur-sm" />
@@ -31,16 +42,13 @@ export default function Homepage() {
           <p className="mt-2 text-sm text-zinc-500">A montar os andaimes…</p>
         </div>
 
-        {/* Ações */}
-        
-
         {/* Rodapé pequeno */}
         <p className="mt-10 text-xs text-zinc-500">
           © {new Date().getFullYear()} — em breve.
         </p>
       </section>
 
-      {/* Keyframes inline (Tailwind permite via arbitrary) */}
+      {/* Keyframes inline */}
       <style>{`
         @keyframes progress {
           0% { transform: translateX(-60%); width: 35%; }
