@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import NotFound from "./pages/NotFound"; // cria este ficheiro
+import Homepage from "./Pages/Homepage.jsx";
+import NotFound from "./Pages/NotFound.jsx"; // cria este ficheiro
 
 function App() {
   return (
